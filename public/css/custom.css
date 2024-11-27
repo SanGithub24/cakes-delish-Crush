@@ -1,0 +1,37 @@
+:root {
+    --primary-color: #6E524A;
+    --secondary-color: #DC966C;
+    --accent-color-1: #9F3140;
+    --accent-color-2: #FFA68E;
+    --background-color: #FFEAC5;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.nav-link {
+    color: white;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border: none;
+}
+
+.card-title {
+    color: var(--accent-color-1);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+}

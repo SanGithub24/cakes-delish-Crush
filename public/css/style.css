@@ -1,0 +1,505 @@
+/*navbar*/
+
+.navbar-logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+/*end*/
+
+/*jumbotron section*/
+
+.hero-section{
+    position: relative;
+}
+
+.main-background{
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.name{
+    padding-top: 120px;
+}
+
+.display-4{
+    /*color: var(--primary-color);*/
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 3px 3px 0px #6E524A,   /* Darker shadow to simulate depth */
+    6px 6px 0px #DC966C,   /* Second layer for more depth */
+    9px 9px 0px #9F3140,   /* Third layer for a bold 3D effect */
+    12px 12px 0px #FFA68E; /* Lighter shadow for contrast */
+
+}
+
+.lead{
+    /*color: var(--accent-color-2);*/
+    color: white;
+    font-weight: bold;
+    background-color: rgba(255,255,255, 0.1);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.main-btn{
+    background-color: var(--secondary-color);
+    border: none;
+}
+
+.main-btn:hover {
+    background-color: #9F3140;
+}
+
+/*end*/
+
+/*main 3 cards*/
+
+.featured-cakes {
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.featured-cakes:hover {
+    transform: scale(1.1);
+}
+
+.card-img-top{
+    height: 414px;
+}
+
+/*end*/
+
+/*<!-- Shop Information Section -->*/
+
+.info_sec {
+    /*width: 10px;*/
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 10px;
+    transition: transform 0.3s ease;
+}
+
+.info_sec:hover {
+    transform: scale(1.1);
+}
+
+.circle_img_1{
+    top: -40px;
+    left: 100px;
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    /*z-index: 1;*/
+    /*box-shadow: #18181b;*/
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.circle_img_2{
+    top: -40px;
+    right: 100px;
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/*end*/
+
+/*offers*/
+
+.offers-section {
+    height: 58vh;
+}
+
+.offer-banner{
+    width: 600px;
+    height: auto;
+    position: relative;
+    border-radius: 20px;
+    z-index: 10;
+    margin-top: -50px; /* Adjust this value based on how high you want it to appear */
+    margin-bottom: -50px; /* Ensures it overlaps with the section below */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Creates a 3D lift effect */
+    transform: translateY(-20px); /* Optional: slightly lifts the image */
+}
+
+.special-offer {
+    font-family: "Castellar";
+    font-size: 55px;
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-100%); /* Start the text off-screen (left) */
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        transform: translateX(0); /* Move text to its original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+.animate-slide-in-left {
+    animation: slide-in-left 2s ease-out 0s; /* Initial animation with 1s duration */
+    /*animation-delay: 0s; !* Start the animation immediately *!*/
+    animation-iteration-count: infinite; /* Loop the animation infinitely */
+    animation-timing-function: ease-out; /* Smooth easing */
+    animation-fill-mode: forwards; /* Keeps the final state of animation */
+    animation-play-state: running; /* Ensure animation keeps running */
+    animation-duration: 10s; /* Duration of the animation (1 second) */
+    animation-delay: 6s; /* Animation occurs every 30 seconds */
+}
+
+.contact-details {
+    font-size: 15px;
+    color: #6E524A;
+    text-decoration: none;
+}
+
+.contact-details:hover {
+    color: #9F3140;
+}
+
+/*end*/
+
+/*testimonials*/
+
+.shade{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.reviews-section{
+    padding-top: 100px;
+
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 60vh
+}
+
+.reviews-section .card {
+    height: 100%; /* Ensure cards have equal height */
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency on cards */
+
+}
+
+.reviews-prev-icon, .reviews-next-icon {
+    filter: invert(1); /* Make controls visible on dark background */
+}
+
+.reviews-prev, .reviews-next {
+    opacity: 0;
+}
+
+.reviews-prev, .reviews-next {
+    opacity: 0;
+    top: 10%; /* Adjust this value to get the exact vertical alignment you want */
+    transform: translateY(-50%);
+    /*color: #fff;*/
+}
+
+/* Ensure the buttons stay visible but appear more smoothly */
+.reviews-prev:hover, .reviews-next:hover {
+    color: #000; /* Optional: Change color or effect on hover */
+}
+
+/*end*/
+
+/* Responsive styling */
+@media (max-width: 768px) {
+
+    .carousel-item {
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        /*min-height: 200px; !* Ensuring the images are large enough on mobile *!*/
+    }
+
+    .hero-section h1 {
+        font-size: 2rem; /* Reducing font size for smaller screens */
+    }
+
+    .hero-section p.lead {
+        font-size: 1rem;
+    }
+
+    .hero-section .btn {
+        font-size: 0.875rem; /* Adjusting button size for mobile */
+    }
+
+    .circle_img_1{
+        top: -30px;
+        left: 30px;
+        width: 70px;
+        height: auto;
+        border-radius: 50%;
+        /*z-index: 1;*/
+        /*box-shadow: #18181b;*/
+    }
+
+    .circle_img_2{
+        top: -30px;
+        right: 30px;
+        width: 70px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .offers-section .col-md-6 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .offers-section img.offer-banner {
+        width: 400px;
+        margin-bottom: -40px;
+    }
+
+    .offers-section .special-offer {
+        font-size: 2rem;
+    }
+
+    .offers-section .contact-details {
+        font-size: 1rem;
+    }
+
+}
+
+/*home page end*/
+
+/*menu page*/
+
+.title {
+    color: var(--primary-color);
+}
+/* General styling for the featured card */
+.featured-item {
+    border: 2px solid var(--primary-color); /* Add your custom border */
+    /*background-color: var(--secondary-color); !* Add custom background color *!*/
+    transition: transform 0.3s ease-in-out;
+    height: 100%;
+}
+
+/* Styling the card image */
+.featured-item-img {
+    /*border-radius: 10px;*/
+    max-height: 200px;
+    object-fit: cover;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Styling the card body */
+.featured-item-body {
+    padding: 15px;
+}
+
+/* Styling the title */
+.featured-item-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Styling the card text */
+.featured-item-text {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+/* Styling the price */
+.featured-item-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+/* Styling the button */
+.featured-item-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Hover effects for the card */
+.featured-item:hover {
+    /*background-color: var(--secondary-color);*/
+    transform: scale(1.05);
+}
+
+.featured-item-btn:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+/* Container for pagination */
+.pagination-container {
+    margin-top: 20px;
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.25rem;
+}
+
+.pagination .page-item {
+    margin: 0 5px;
+}
+
+.pagination .page-item .page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    color: var(--primary-color);
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    font-size: 18px;
+    line-height: 1.25;
+    border-radius: 0.25rem;
+}
+
+.pagination .page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+
+/* Add hover effects */
+.pagination .page-item .page-link:hover {
+    color: var(--primary-color);
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+}
+
+/* Optional: Custom styles for the "Previous" and "Next" buttons */
+.pagination .page-item:first-child .page-link {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.pagination .page-item:last-child .page-link {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+/* Responsive - Adjust spacing on smaller screens */
+@media (max-width: 576px) {
+    .pagination .page-item .page-link {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+}
+
+/*menu page end*/
+
+/*about*/
+
+.about {
+    color: #6E524A;
+}
+
+.about-image {
+    width: 400px;
+    height: 400px;
+    display: block;        /* Ensure the image is a block-level element */
+    margin: 0 auto;        /* Automatically adjust left and right margins */
+    text-align: center;
+}
+
+
+/*end*/
+
+/*contact*/
+
+.contact {
+    color: #6E524A;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Contact form styling */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.contact-us-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Social media section */
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #6E524A;
+    font-weight: 600;
+}
+
+.social-media a:hover {
+    color: #9F3140;
+}
+
+/* Icon sizes */
+.social-media i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/*contact page end*/
+
+/*footer*/
+
+.f-icons{
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: larger;
+}
